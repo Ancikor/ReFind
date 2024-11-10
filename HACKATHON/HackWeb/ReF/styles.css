@@ -1,0 +1,256 @@
+/* Общие стили */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Стили для навигационной панели */
+
+.navbar {
+    background-color: #8f8d92;
+    border-bottom: 3px solid #00912b;
+}
+
+.navbar .navbar-brand {
+    color: white !important;
+}
+
+.navbar .nav-link {
+    color: white !important;
+}
+
+.navbar .nav-link:hover {
+    color: #f7f7f7 !important;
+}
+
+
+/* Главная панель / Дашборд */
+
+#dashboard {
+    background-color: #f4f4f9;
+}
+
+.stat-card {
+    border-radius: 10px;
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-10px);
+}
+
+.stat-card h3 {
+    color: #6a4c9c;
+}
+
+.stat-card p {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+
+/* Загрузка резюме */
+
+#upload {
+    background-color: #fafafa;
+}
+
+#file-upload {
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #ececec;
+}
+
+#upload .btn-primary {
+    background-color: #9b76d0;
+    border-color: #9b76d0;
+}
+
+#upload .btn-primary:hover {
+    background-color: #6a4c9c;
+    border-color: #6a4c9c;
+}
+
+
+/* Фильтры */
+
+#filters {
+    background-color: #ffffff;
+}
+
+.form-label {
+    color: #6a4c9c;
+}
+
+.form-control,
+.form-select {
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.form-range {
+    width: 100%;
+    margin: 10px 0;
+}
+
+#filters .btn-primary {
+    background-color: #9b76d0;
+    border-color: #9b76d0;
+}
+
+#filters .btn-primary:hover {
+    background-color: #6a4c9c;
+    border-color: #6a4c9c;
+}
+
+#filters .btn-outline-secondary {
+    border-color: #6a4c9c;
+    color: #6a4c9c;
+}
+
+#filters .btn-outline-secondary:hover {
+    background-color: #6a4c9c;
+    color: white;
+}
+
+
+/* Результаты */
+
+#results {
+    background-color: #f4f4f9;
+}
+
+.candidate-card {
+    background-color: #fff;
+    height: 440px;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.candidate-card:hover {
+    transform: translateY(-10px);
+}
+
+.candidate-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.candidate-info h3 {
+    color: #6a4c9c;
+}
+
+.candidate-info p {
+    color: #333;
+}
+
+.candidate-info button {
+    margin-right: 10px;
+}
+
+.candidate-info .btn-info {
+    margin: 10px;
+    background-color: #9b76d0;
+    border-color: #9b76d0;
+}
+
+.candidate-info .btn-outline-secondary {
+    border-color: #6a4c9c;
+    color: #6a4c9c;
+}
+
+
+/* Настройки */
+
+#settings {
+    background-color: #ffffff;
+}
+
+#settings .btn {
+    margin-right: 10px;
+}
+
+#settings .btn-primary {
+    background-color: #9b76d0;
+    border-color: #9b76d0;
+}
+
+#settings .btn-secondary {
+    background-color: #6a4c9c;
+    border-color: #6a4c9c;
+}
+
+#settings .btn-primary:hover,
+#settings .btn-secondary:hover {
+    background-color: #6a4c9c;
+    border-color: #6a4c9c;
+}
+
+
+/* Футер */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+footer h3 {
+    color: #9b76d0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* Отступы и выравнивания */
+
+.container {
+    max-width: 1200px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mb-4 {
+    margin-bottom: 3rem;
+}
+
+.mt-3 {
+    margin-top: 1rem;
+}
+
+
+/* Адаптивность */
+
+@media (max-width: 768px) {
+    .navbar .navbar-toggler {
+        background-color: #9b76d0;
+    }
+    .stat-card {
+        padding: 20px;
+    }
+    .candidate-card {
+        padding: 15px;
+    }
+}
